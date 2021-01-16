@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/d79a895327.js" crossorigin="anonymous"></script>
+  <title>CSS basics</title>
+</head>
+    
+<body>
+  <nav id="navbar">
+    <span class="navbar-toggle" id="js-navbar-toggle">    <i class="fas fa-bars"></i></span>
+    <header><i class="fab fa-css3"></i>CSS Basics</header>
+    <ul class="main-nav" id="js-menu">
+      <li><a class="nav-link" href="#introduction">Introduction</a></li>
+      <li><a class="nav-link" href="#why_should_I_learn_css?">Why Should I Learn CSS?</a></li>
+      <li><a class="nav-link" href="#what_do_I_already_need_to_know?">What Do I Already Need to Know?</a></li>
+      <li><a class="nav-link" href="#setting_up_a_css_file">Setting Up a CSS file</a></li>
+      <li><a class="nav-link" href="#coding_css">Coding CSS</a></li>
+      <li><a class="nav-link" href="#classes">Classes</a></li>
+      <li><a class="nav-link" href="#more_resources">More Resources</a></li>
+    </ul>
+  </nav>
+    
+  <div id="wrapper">
+    <main id="main-doc">
+      <section class="main-section" id="introduction">
+        <header>Introduction</header>
+        <article>
+          <p>CSS is a language developers use to style HTML. CSS is critical to be familar with for front-end development. Even if you are focused on back-end development, it is helpful to understand some basic CSS in order to be able to efficiently read and understand code you may be expected to work with or build upon in the future. It is also a lot of fun to use and to learn, as you can see its impact immediately!</p>
+          <p>Keep reading to learn more!</p>
+        </article>
+      </section>
+      <section class="main-section" id="why_should_I_learn_css?">
+        <header>Why Should I Learn CSS?</header>
+        <article>
+          <p>  As you build on your coding knowledge and skills over time, you will find that there are libraries and frameworks that you can learn that help with styling, like Bootstrap. First, though, you want to learn basic CSS so that you can build your coding knowledge on top of a solid foundation and understand how elements are impacted by code. After all, if you learned how to do a layup before practicing ball handling, you wouldn't be all that useful in a game time scenario.</p>
+        </article>
+      </section>
+      <section class="main-section" id="what_do_I_already_need_to_know?">
+        <header>What Do I Already Need to Know?</header>
+        <article>
+          <p>Before you can learn basic CSS, you need to learn basic HTML. Once you have HTMl written, you use CSS to make the .html document look good. If you don't have a foundation in HTML yet, check out at least one of the following resources before moving ahead:</p>
+          <ul class="main-ul">
+            <li><a href="https://www.freecodecamp.org/learn/" target="_blank">Basic HTML and HTML5 at freecodecamp.com</a>
+            </li>
+            <li><a href="https://www.codecademy.com/learn/learn-html" target="_blank">Learn HTML at Codecademy</a> 
+            </li>
+            <li><a href="https://www.w3schools.com/html/default.asp" target="_blank">HTML Tutorial at w3schools.com</a>
+            </li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="setting_up_a_css_file">
+        <header>Setting Up a CSS file</header>
+        <article>
+          <p>Since you already know that you need an HTML file to begin styling, now you can create and link a .css file to your .html file.</p>
+          <p>You have already stored your .html file in a folder that can serve as a repo. Now you will create a new folder inside titled css. Create a blank file titled style.css inside the css folder. </p>
+          <p>Now you will link your .css file to your html file. Open your .html file in your console of choice. Within the head section, insert the following code:</p>
+          <div class="code-section">
+            <code> &lt;link rel="stylesheet" href="css/style.css"&gt; </code>
+          </div>
+          <p>Save the file. Now your css stylesheet is linked to your html file and ready to code!</p>
+        </article>
+      </section>
+      <section class="main-section" id="coding_css">
+        <header>Coding CSS</header>
+        <article>
+          <p>With CSS, every element or object in your html code can be targeted and stylized. The syntax of CSS is as follows:</p>
+          <div class="code-section">
+            <code>HTML element {<br>
+              &nbsp;&nbsp;property1: value;<br>
+              &nbsp;&nbsp;property2: value;<br>
+              }
+            </code>
+          </div>
+          <p>For example, you can target the font in your h2 as follows.</p>
+          <div class="code-section">
+            <code> h2 {<br>
+              &nbsp;&nbsp;font-family: 'Arial';<br>
+              &nbsp;&nbsp;font-size: 20px;<br>
+              &nbsp;&nbsp;color: Orchid;<br>
+              &nbsp;&nbsp;text-decoration: overline;<br>
+              }
+            </code>
+          </div>
+          <p>This is more efficient than using HTML tag for h2 to target these properties as it will apply to all the h2 tags on the page. The same stylesheet can also be linked to multiple pages in your folder/repo, making consistent styling a breeze!
+        </article>
+      </section>
+      <section class="main-section" id="classes">
+        <header>Classes</header>
+        <article>
+          <p>If you assign a class to elements in your HTML code, you can group elements to style them in CSS. For example, perhaps you want some of your h2 elements to be the color aquamarine, font size 24px, and bold and some of your h2 elements to be the color orchid, font size 30px, and italicized. You can give each h2 element in your HTML a class:</p>
+          <div class="code-section">
+            <code> &lt;h2 class="orchid"&gt;</code><br>
+            <code>&lt;h2 class="aquamarine"&gt;</code>
+          </div>
+          <p>Now in the style.css file, you can style by the given class (CSS shorthand for class is . ):</p>
+          <div class="code-section">
+            <code>.orchid {<br>
+              &nbsp;&nbsp;color: orchid;<br>
+              &nbsp;&nbsp;font-size: 30px;<br>
+              &nbsp;&nbsp;font-style: italic;<br>
+              }
+            </code><br><br>
+            <code>.aquamarine {<br>
+              color: aquamarine;<br>
+              font-size: 24px;<br>
+              font-weight: bold;<br>
+              }
+            </code>
+          </div>
+        </article>
+      </section>
+      <section class="main-section" id="more_resources">
+        <header>More Resources</header>
+        <article>
+          <p>Here are more resources to explore as you start coding your .css file:</p>
+          <ul class="main-ul">
+            <li><a href="https://www.w3schools.com/css/" target="_blank">CSS Tutorial by w3schools.com</a></li>
+            <li><a href="https://medium.com/level-up-web/100-css-resources-for-web-designers-and-developers-c060bed7a362" target="_blank">100+ CSS Resources for Web Designers and Developers</a></li>
+          </ul>
+        </article>
+      </section>
+      <footer id="footer">2020, KW // freecodecamp.com project</footer>
+    </main>
+  </div>"
+  <script type="text/javascript" src="js/actions.js"></script>
+</body>
+</html>
