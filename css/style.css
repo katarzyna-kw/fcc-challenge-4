@@ -94,12 +94,13 @@ body {
 .main-section ul li {
   font-weight: bold;
   list-style: circle;
-  margin-top: 5px;
+  margin-top: 35px;
 }
 
 .main-section a {
   color: #118ab2;
   text-decoration: none;
+  margin-top: 10px;
 }
 
 .main-section a:hover {
@@ -128,7 +129,6 @@ body {
   text-transform: uppercase;
   letter-spacing: .2em;
 }
-
 
 @media (min-width: 1200px) {
   
