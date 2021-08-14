@@ -16,7 +16,6 @@ body {
   width: 100%;
 	position: -webkit-sticky;
 	position: sticky;
-	top: 0;  
 }
 
 #navbar header {
@@ -37,7 +36,6 @@ body {
   border-bottom: 1px solid #06d6a0;
   font-size: 20px;
 }
-
 
 #navbar a:hover {
   color: #ef476f;
@@ -71,7 +69,6 @@ body {
 #main-doc {
   padding-right: 7%;
   padding-left: 7%;
-  /* padding-top: 40px; */
   line-height: 15px;
 }
 
@@ -82,7 +79,7 @@ body {
 }
 
 .main-section {
-  /* scroll-margin-top: 200px; */
+  /* scroll-margin-top: 4rem; */
   font-size: 16px;
   line-height: 30px;
 }
@@ -140,6 +137,7 @@ body {
 }
 
 @media (min-width: 600px) {
+
   #navbar header {
     font-size:40px;
   }
